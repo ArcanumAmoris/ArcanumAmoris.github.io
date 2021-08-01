@@ -1,0 +1,15 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: lavender;
+}
+.app {  
+  @media screen and (max-width: 600px) {
+    .container {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.notes {
+    display: flex;
+    float: left;
+    flex-direction: column;
+    flex-grow: 100;
+    flex: 1 1 0;
+    display: flex;
+    box-shadow: 0 0 5px rgb(2, 2, 4);
+    max-height: 10.6in;
+    min-height: 10.6in;
+    margin-left: 1rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.notes .ql-toolbar.ql-snow {
+    display: none;
+}
+
+.notes .ql-container.ql-snow {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+}
+
+.notes_header {
+    top: 0;
+    position: sticky;
+    box-shadow: 0 0 5px rgb(2, 2, 4);
+    background-color: rgb(211, 243, 255);
+    border-radius: 3px;
+    width: 3.5in;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: 1;
+    margin: 0 1rem;
+    height: 42px;
+}
+
+.notes .ql-editor {
+    box-shadow: 0 0 5px rgb(2, 2, 4);
+    background-color: rgb(236, 255, 225);
+    width: 3.5in;
+    cursor: pointer;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.note {
+    height: 80px;
+    margin: 15px 0;
+}
