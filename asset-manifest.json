@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/ArcanumAmoris/NotePad/static/css/main.33bd8192.chunk.css",
-    "main.js": "/ArcanumAmoris/NotePad/static/js/main.53999df4.chunk.js",
-    "main.js.map": "/ArcanumAmoris/NotePad/static/js/main.53999df4.chunk.js.map",
-    "runtime-main.js": "/ArcanumAmoris/NotePad/static/js/runtime-main.b7e01e23.js",
-    "runtime-main.js.map": "/ArcanumAmoris/NotePad/static/js/runtime-main.b7e01e23.js.map",
-    "static/css/2.59dee6c0.chunk.css": "/ArcanumAmoris/NotePad/static/css/2.59dee6c0.chunk.css",
-    "static/js/2.f055fcc3.chunk.js": "/ArcanumAmoris/NotePad/static/js/2.f055fcc3.chunk.js",
-    "static/js/2.f055fcc3.chunk.js.map": "/ArcanumAmoris/NotePad/static/js/2.f055fcc3.chunk.js.map",
-    "index.html": "/ArcanumAmoris/NotePad/index.html",
-    "static/css/2.59dee6c0.chunk.css.map": "/ArcanumAmoris/NotePad/static/css/2.59dee6c0.chunk.css.map",
-    "static/css/main.33bd8192.chunk.css.map": "/ArcanumAmoris/NotePad/static/css/main.33bd8192.chunk.css.map",
-    "static/js/2.f055fcc3.chunk.js.LICENSE.txt": "/ArcanumAmoris/NotePad/static/js/2.f055fcc3.chunk.js.LICENSE.txt"
+    "main.css": "/static/css/main.33bd8192.chunk.css",
+    "main.js": "/static/js/main.53999df4.chunk.js",
+    "main.js.map": "/static/js/main.53999df4.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.b7ced81c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.b7ced81c.js.map",
+    "static/css/2.59dee6c0.chunk.css": "/static/css/2.59dee6c0.chunk.css",
+    "static/js/2.f055fcc3.chunk.js": "/static/js/2.f055fcc3.chunk.js",
+    "static/js/2.f055fcc3.chunk.js.map": "/static/js/2.f055fcc3.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.59dee6c0.chunk.css.map": "/static/css/2.59dee6c0.chunk.css.map",
+    "static/css/main.33bd8192.chunk.css.map": "/static/css/main.33bd8192.chunk.css.map",
+    "static/js/2.f055fcc3.chunk.js.LICENSE.txt": "/static/js/2.f055fcc3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.b7e01e23.js",
+    "static/js/runtime-main.b7ced81c.js",
     "static/css/2.59dee6c0.chunk.css",
     "static/js/2.f055fcc3.chunk.js",
     "static/css/main.33bd8192.chunk.css",
