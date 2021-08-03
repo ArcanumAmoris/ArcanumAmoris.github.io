@@ -36,7 +36,7 @@ function NoteInput() {
         })
     }, [quill])
 
-    useEffect(() => {
+    useEffect(() => { 
         if (quill == null) return 
         window.scroll(0,0)
         quill.setContents(JSON.parse(selectedNote), "user")
