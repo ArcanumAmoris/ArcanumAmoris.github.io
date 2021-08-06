@@ -20,3 +20,8 @@ export const SetActionForNotes = noteArray => ({
     type: "SET_NOTES",
     payload: noteArray
 })
+
+export const SetActionForNewQuill = (a) => ({
+  type: "SET_NEW_QUILL",
+  payload: a
+})

@@ -5,12 +5,12 @@ import "./NoteInput.css"
 import { useSelector } from "react-redux"
 import * as Logic from "./Logic.js"
 import store from './StoreAndReducers/ReduxStore'
-import SetMessage from './StoreAndReducers/MessageReducer'
 import { SetActionForQuill } from './StoreAndReducers/Actions'
 
 function NoteInput() {
     const selectedNote = useSelector(state => state.SetCurrentNote.selectedNote)
     const noteIndex = useSelector(state => state.SetCurrentNote.index)
+    const newQuill = useSelector(state => state.SetNewQuill)
     const message = useSelector(state => state.SetMessage)
     const quill = useSelector(state => state.SetQuill)
     const [disabled, setDisabled] = useState(true)
@@ -22,7 +22,7 @@ function NoteInput() {
         wrapper.append(editor)
         var q = new Quill(editor, { modules: {toolbar: Logic.NOTEPAD_TOOLBAR }, theme: "snow" })  
         store.dispatch(SetActionForQuill(q))
-    }, [message])
+    }, [newQuill])
 
     useEffect(() => {
         if (quill == null) return 

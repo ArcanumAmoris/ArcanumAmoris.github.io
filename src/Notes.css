@@ -2,9 +2,6 @@
     display: flex;
     float: left;
     flex-direction: column;
-    flex-grow: 100;
-    flex: 1 1 0;
-    display: flex;
     box-shadow: 0 0 5px rgb(2, 2, 4);
     max-height: 10.6in;
     min-height: 10.6in;
@@ -47,9 +44,44 @@
     display: flex;
     align-items: center;
     margin-bottom: 100px;
+    overflow-y: hidden;
+}
+
+.notes .ql-editor > p {
+    cursor: pointer;
 }
 
 .note {
     height: 80px;
     margin: 15px 0;
+}
+
+.editorDiv {
+    position: relative;
+    z-index: 1;
+}
+
+.delBtn {
+    position: absolute;
+    top: 0;
+    margin: auto;
+    left: 0;
+    right: 80%;
+    bottom: 0;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.delBtn:hover {
+    color: red;
+}
+
+.selectDlt {
+    position: absolute;
+    left: 5px;
+    cursor: pointer;
+}
+
+.selectDlt:hover {
+    color: rgb(255, 0, 0);
 }
