@@ -10,9 +10,9 @@ function Notes() {
     const [deleteSelected, setDelete] = useState(false)
     const numberOfNotes = localStorage.length
     
-    useEffect(() => {
+    useEffect((i) => {
         Logic.getAllNotes()
-    }, [])     
+    }, [])  
 
     return (
         <div className="notes">

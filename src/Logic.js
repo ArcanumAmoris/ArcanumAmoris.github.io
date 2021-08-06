@@ -18,12 +18,18 @@ export function saveChanges(quill, noteIndex) {
     }
 }
 
+function keyGreaterThan(i) {
+    const arr = Array.from(Object.keys(localStorage).join(" "))
+    return arr.some(el => el > i)
+}
+
 export function saveNote(selectedNote, quill, noteIndex) {
+    console.log(Object.keys(localStorage).join(" "))
     if (selectedNote) {
         saveChanges(quill, noteIndex)
     } else {
-        for (let i = 0; i < 10000; i++) {
-            if (!localStorage.getItem(i)) {
+        for (let i = 0; i < 100000000; i++) {
+            if (!localStorage.getItem(i) && !keyGreaterThan(i)) {
                 localStorage.setItem(i, JSON.stringify(quill.getContents().ops))
                 setTimeout(() => {
                     store.dispatch(SetActionForMessage(""))
@@ -33,6 +39,8 @@ export function saveNote(selectedNote, quill, noteIndex) {
                 store.dispatch(SetActionForMessage("Your note has been saved!"))
                 getAllNotes()
                 break
+            } else {
+                continue
             }
         }
     }
