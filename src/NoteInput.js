@@ -20,7 +20,7 @@ function NoteInput() {
         wrapper.innerHTML = ''
         const editor = document.createElement("div")
         wrapper.append(editor)
-        var q = new Quill(editor, { modules: {toolbar: Logic.NOTEPAD_TOOLBAR }, theme: "snow" })  
+        var q = new Quill(editor, { modules: {toolbar: Logic.NOTEPAD_TOOLBAR }, theme: "snow"})  
         store.dispatch(SetActionForQuill(q))
     }, [newQuill])
 

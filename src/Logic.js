@@ -8,10 +8,11 @@ export function saveChanges(quill, noteIndex) {
             localStorage.setItem(key, JSON.stringify(quill.getContents().ops))
             setTimeout(() => {
                 store.dispatch(SetActionForMessage(""))
-                store.dispatch(SetActionForNewQuill(""))
-            }, 4000);
-            store.dispatch(SetActionForNewQuill(" "))
+                store.dispatch(SetActionForNewQuill(" "))
+            }, 3000);
+            store.dispatch(SetActionForNewQuill(""))
             store.dispatch(SetActionForMessage("Your changes have been saved!"))
+            store.dispatch(SetActionForCurrentNote(null))
             getAllNotes()
             break
         }
@@ -24,7 +25,6 @@ function keyGreaterThan(i) {
 }
 
 export function saveNote(selectedNote, quill, noteIndex) {
-    console.log(Object.keys(localStorage).join(" "))
     if (selectedNote) {
         saveChanges(quill, noteIndex)
     } else {
@@ -34,7 +34,7 @@ export function saveNote(selectedNote, quill, noteIndex) {
                 setTimeout(() => {
                     store.dispatch(SetActionForMessage(""))
                     store.dispatch(SetActionForNewQuill(" "))
-                }, 4000);
+                }, 3000);
                 store.dispatch(SetActionForNewQuill(""))
                 store.dispatch(SetActionForMessage("Your note has been saved!"))
                 getAllNotes()

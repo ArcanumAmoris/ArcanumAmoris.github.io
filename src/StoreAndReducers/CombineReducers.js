@@ -1,5 +1,5 @@
 import { combineReducers } from "redux";
-import SetCurrentNote from "./SetCurrNoteReducer"
+import SetCurrentNote from "./CurNoteReducer"
 import NotesReducer from "./NotesReducer";
 import SetNewQuill from "./NewQuillReducer";
 import SetMessage from "./MessageReducer";

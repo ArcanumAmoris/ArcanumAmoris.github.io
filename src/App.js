@@ -6,8 +6,8 @@ function App() {
   return (
     <>
         <div className="app">
-          <Notes />
           <NoteInput />
+          <Notes />
         </div>
     </>
   );
